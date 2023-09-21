@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.jpeg" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/4e12486def.js" crossorigin="anonymous"></script>
+    <!-- swiper js link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <title>A Social build by Rakibul</title>
+</head>
+
+<body>
+    <!-- start navbar -->
+
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">
+                <h3>A <span>Social</span></h3>
+            </div>
+
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search For Creators">
+            </div>
+            <div class="add-post">
+                <label for="add-post" class="btn btn-primary mini-button">Add Post</label>
+                <div class="profile-picture" id="my-profile-picture">
+                    <img src="./assets/me.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+
+    <!-- start main  -->
+    <main>
+        <div class="container main-container">
+            <!-- left -->
+            <section class="main-left">
+                <a class="profile">
+                    <div class="profile-picture" id="my-profile-picture">
+                        <img src="./assets/me.jpg" alt="">
+                    </div>
+                    <div class="profile-handle">
+                        <h4>Rakib Hasan</h4>
+                        <p class="text-gray">
+                            @therakib
+                        </p>
+                    </div>
+                </a>
+
+                <aside id="aside">
+                    <a class="menu-item active">
+                        <span>
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+                        <h3>Home</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span>
+                            <i class="fa-regular fa-compass"></i>
+                        </span>
+                        <h3>Explore</h3>
+                    </a>
+                    <a class="menu-item" id="notification-menu">
+                        <span>
+                            <i class="fa-solid fa-bell"></i>
+                        </span>
+                        <small class="notify-counter" id="noti-counter">9+</small>
+                        <h3>Notification</h3>
+                        <!-- notification box -->
+                        <div class="notification-box">
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./assets/anowar.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Anower Hossain</b> accepted your friend request <small class="text-gray">1 days
+                                        ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./assets/arif.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Arif Hasan</b> commented your post <small class="text-gray">3 days
+                                        ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./assets/soykot.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Soykot Khan</b> liked your post <small class="text-gray"> 2 hours
+                                        ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./assets/sakib.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Sakib Hasan</b> and <b>12 others </b> liked on your post<small
+                                        class="text-gray">7 days
+                                        ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./assets/emon.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Emon Ali</b> and <b> 5 other </b> commented on your post <small
+                                        class="text-gray">3 days
+                                        ago</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- end notification box -->
+                    </a>
+                    <a class="menu-item" id="message-menu">
+                        <span>
+                            <i class="fa-brands fa-facebook-messenger"></i>
+                        </span>
+                        <small class="notify-counter" id="msg-counter">9+</small>
+                        <h3>Message</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </span>
+                        <h3>Book Marks</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span>
+                            <i class="fa-solid fa-chart-line"></i>
+                        </span>
+                        <h3>Analytics</h3>
+                    </a>
+                    <a class="menu-item" id="theme">
+                        <span>
+                            <i class="fa-solid fa-dice-d20"></i>
+                        </span>
+                        <h3>Theme</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span>
+                            <i class="fa-solid fa-gear"></i>
+                        </span>
+                        <h3>Setting</h3>
+                    </a>
+                </aside>
+                <label for="add-post" class="btn btn-primary btn-lg" id="create-post">Create a post</label>
+
+            </section>
+
+            <!-- middle -->
+            <section class="main-middle">
+                <div class="middle-container">
+                    <!-- stories -->
+                    <div class="stories">
+                        <!-- <div class="stories-wrapper"> -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="story swiper-slide">
+                                    <img src="" alt="" id="storyImg">
+                                    <div class="profile-picture" id="my-profile-picture">
+                                        <img src="./assets/me.jpg" alt="">
+                                    </div>
+                                    <label for="add-story" class="add-story">
+                                        <i class="fa-solid fa-plus" id="upload"></i>
+                                        <p>Add Your Story</p>
+                                    </label>
+                                    <input type="file" id="add-story" accept="image/jpg, image/png, image/jpeg">
+                                </div>
+                                <div class=" story swiper-slide">
+                                    <img src="./assets/jahid.jpg" alt="">
+                                    <div class="profile-picture">
+                                        <img src="./assets/jahid.jpg" alt="">
+                                    </div>
+                                    <p>Jahid Hasan</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="./assets/sakib.jpg" alt="">
+                                    <div class="profile-picture">
+                                        <img src="./assets/sakib.jpg" alt="">
+                                    </div>
+                                    <p>Sakib Al Hasan</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="./assets/soykot.jpg" alt="">
+                                    <div class="profile-picture">
+                                        <img src="./assets/soykot.jpg" alt="">
+                                    </div>
+                                    <p>Soykot Khan</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="./assets/arif.jpg" alt="">
+                                    <div class="profile-picture">
+                                        <img src="./assets/arif.jpg" alt="">
+                                    </div>
+                                    <p>Arif Hasan</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="./assets/anowar.jpg" alt="">
+                                    <div class="profile-picture">
+                                        <img src="./assets/anowar.jpg" alt="">
+                                    </div>
+                                    <p>Anower Hossain</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="./assets/emon.jpg" alt="">
+                                    <div class="profile-picture">
+                                        <img src="./assets/emon.jpg" alt="">
+                                    </div>
+                                    <p>Emon Ali</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="./assets/fahad.jpg" alt="">
+                                    <div class="profile-picture">
+                                        <img src="./assets/arif.jpg" alt="">
+                                    </div>
+                                    <p>Arif Hasan</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="./assets/rifat.jpg" alt="">
+                                    <div class="profile-picture">
+                                        <img src="./assets/rifat.jpg" alt="">
+                                    </div>
+                                    <p>Fifat Khan</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+
+                    <!-- post -->
+                    <form class="add-post input-post">
+                        <div class="profile-picture" id="my-profile-picture">
+                            <img src="./assets/me.jpg" alt="">
+                        </div>
+                        <input type="text" placeholder="What's on your mind?" id="add-post">
+                        <input type="submit" value="Post" class="btn btn-primary">
+
+                    </form>
+
+                    <!-- feed -->
+                    <div class="feeds">
+                        <div class="feed myfeed">
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture" id="my-profile-picture">
+                                        <img src="./assets/me.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Rakib Hasan</h3>
+                                        <div class="time text-gray">
+                                            <small>
+                                                Bangladesh, <span>2 days ago</span>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                    <ul class="edit-menu">
+                                        <li><i class="fa-regular fa-pen-to-square"></i>Edit</li>
+                                        <li><i class="fa-solid fa-trash-can"></i>Delete</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- feed img -->
+                            <div class="feed-img">
+                                <img src="./assets/p4.avif" alt="">
+                            </div>
+                            <!-- feed action area -->
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa-regular fa-heart"></i></span>
+                                    <span><i class="fa-regular fa-comment"></i></span>
+                                    <span><i class="fa-regular fa-paper-plane"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+
+                            <!-- liked by -->
+                            <div class="liked-by">
+                                <span><img src="./assets/anowar.jpg" alt=""></span>
+                                <span><img src="./assets/arif.jpg" alt=""></span>
+                                <span><img src="./assets/emon.jpg" alt=""></span>
+                                <p><b>Anower</b> and <b> 46 </b> others likes</p>
+                            </div>
+
+                            <!-- caption -->
+                            <div class="caption">
+                                <div class="title">Lorem ipsum dolor sit amet consectetur adipio.</div>
+                                <p><b>Clear Dream</b> Lorem ipsum dolor sit amet consectetur adipisicing.
+                                    <span class="hars-tag">#lifestyle</span>
+                                </p>
+                            </div>
+
+                            <!-- comments -->
+                            <div class="comments text-gray">
+                                View all comments
+                            </div>
+                        </div>
+                        <div class="feed">
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./assets/jahid.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Jahid Hasan</h3>
+                                        <div class="time text-gray">
+                                            <small>
+                                                Iran, <span>7 days ago</span>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                    <ul class="edit-menu">
+                                        <li><i class="fa-regular fa-pen-to-square"></i>Edit</li>
+                                        <li><i class="fa-solid fa-trash-can"></i>Delete</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- feed img -->
+                            <div class="feed-img">
+                                <img src="./assets/p8.avif" alt="">
+                            </div>
+                            <!-- feed action area -->
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa-regular fa-heart"></i></span>
+                                    <span><i class="fa-regular fa-comment"></i></span>
+                                    <span><i class="fa-regular fa-paper-plane"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+
+                            <!-- liked by -->
+                            <div class="liked-by">
+                                <span><img src="./assets/anowar.jpg" alt=""></span>
+                                <span><img src="./assets/arif.jpg" alt=""></span>
+                                <span><img src="./assets/emon.jpg" alt=""></span>
+                                <p><b>Anower</b> and <b> 46 </b> others likes</p>
+                            </div>
+
+                            <!-- caption -->
+                            <div class="caption">
+                                <div class="title">Lorem ipsum dolor sit amet consectetur adipio.</div>
+                                <p><b>Clear Dream</b> Lorem ipsum dolor sit amet consectetur adipisicing.
+                                    <span class="hars-tag">#lifestyle</span>
+                                </p>
+                            </div>
+
+                            <!-- comments -->
+                            <div class="comments text-gray">
+                                View all comments
+                            </div>
+                        </div>
+                        <div class="feed">
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./assets/anowar.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Anower Hossen</h3>
+                                        <div class="time text-gray">
+                                            <small>
+                                                Pakistan, <span>5 days ago</span>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                    <ul class="edit-menu">
+                                        <li><i class="fa-regular fa-pen-to-square"></i>Edit</li>
+                                        <li><i class="fa-solid fa-trash-can"></i>Delete</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- feed img -->
+                            <div class="feed-img">
+                                <img src="./assets/p5.avif" alt="">
+                            </div>
+                            <!-- feed action area -->
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa-regular fa-heart"></i></span>
+                                    <span><i class="fa-regular fa-comment"></i></span>
+                                    <span><i class="fa-regular fa-paper-plane"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+
+                            <!-- liked by -->
+                            <div class="liked-by">
+                                <span><img src="./assets/anowar.jpg" alt=""></span>
+                                <span><img src="./assets/arif.jpg" alt=""></span>
+                                <span><img src="./assets/emon.jpg" alt=""></span>
+                                <p><b>Anower</b> and <b> 46 </b> others likes</p>
+                            </div>
+
+                            <!-- caption -->
+                            <div class="caption">
+                                <div class="title">Lorem ipsum dolor sit amet consectetur adipio.</div>
+                                <p><b>I love</b> not only nature but also love ooooo!
+                                    <span class="hars-tag">#lifestyle</span>
+                                </p>
+                            </div>
+
+                            <!-- comments -->
+                            <div class="comments text-gray">
+                                View all comments
+                            </div>
+                        </div>
+                        <div class="feed">
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./assets/sakib.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Sakib Hasan</h3>
+                                        <div class="time text-gray">
+                                            <small>
+                                                Bangladesh, <span>6 hours ago</span>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                    <ul class="edit-menu">
+                                        <li><i class="fa-regular fa-pen-to-square"></i>Edit</li>
+                                        <li><i class="fa-solid fa-trash-can"></i>Delete</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- feed img -->
+                            <div class="feed-img">
+                                <!-- <img src="./assets/p6.avif" alt=""> -->
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsa, cum illum
+                                    eveniet eaque libero adipisci vel? Rerum at quas temporibus totam provident, nemo,
+                                    numquam consequatur veritatis maxime eveniet culpa!</h4>
+                            </div>
+                            <!-- feed action area -->
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa-regular fa-heart"></i></span>
+                                    <span><i class="fa-regular fa-comment"></i></span>
+                                    <span><i class="fa-regular fa-paper-plane"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+
+                            <!-- liked by -->
+                            <div class="liked-by">
+                                <span><img src="./assets/anowar.jpg" alt=""></span>
+                                <span><img src="./assets/arif.jpg" alt=""></span>
+                                <span><img src="./assets/me.jpg" alt=""></span>
+                                <p><b>Anower</b> and <b> 46 </b> others likes</p>
+                            </div>
+
+                            <!-- caption -->
+                            <div class="caption">
+                                <div class="title">Lorem ipsum dolor sit amet consectetur adipio.</div>
+                                <p><b>Clear Dream</b> Lorem ipsum dolor sit amet consectetur adipisicing.
+                                    <span class="hars-tag">#lifestyle</span>
+                                </p>
+                            </div>
+
+                            <!-- comments -->
+                            <div class="comments text-gray">
+                                View all comments
+                            </div>
+                        </div>
+                        <div class="feed">
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./assets/soykot.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Soykot Khan</h3>
+                                        <div class="time text-gray">
+                                            <small>
+                                                India, <span>16 hours ago</span>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                    <ul class="edit-menu">
+                                        <li><i class="fa-regular fa-pen-to-square"></i>Edit</li>
+                                        <li><i class="fa-solid fa-trash-can"></i>Delete</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- feed img -->
+                            <div class="feed-img">
+                                <img src="./assets/p3.avif" alt="">
+                            </div>
+                            <!-- feed action area -->
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa-regular fa-heart"></i></span>
+                                    <span><i class="fa-regular fa-comment"></i></span>
+                                    <span><i class="fa-regular fa-paper-plane"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+
+                            <!-- liked by -->
+                            <div class="liked-by">
+                                <span><img src="./assets/anowar.jpg" alt=""></span>
+                                <span><img src="./assets/arif.jpg" alt=""></span>
+                                <span><img src="./assets/me.jpg" alt=""></span>
+                                <p><b>Anower</b> and <b> 46 </b> others likes</p>
+                            </div>
+
+                            <!-- caption -->
+                            <div class="caption">
+                                <div class="title">Lorem ipsum dolor sit amet consectetur adipio.</div>
+                                <p><b>Clear Dream</b> Lorem ipsum dolor sit amet consectetur adipisicing.
+                                    <span class="hars-tag">#lifestyle</span>
+                                </p>
+                            </div>
+
+                            <!-- comments -->
+                            <div class="comments text-gray">
+                                View all comments
+                            </div>
+                        </div>
+                        <div class="feed">
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./assets/arif.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Sakib Hasan</h3>
+                                        <div class="time text-gray">
+                                            <small>
+                                                Bangladesh, <span>6 hours ago</span>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                    <ul class="edit-menu">
+                                        <li><i class="fa-regular fa-pen-to-square"></i>Edit</li>
+                                        <li><i class="fa-solid fa-trash-can"></i>Delete</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- feed img -->
+                            <div class="feed-img">
+                                <img src="./assets/p7.avif" alt="">
+                            </div>
+                            <!-- feed action area -->
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa-regular fa-heart"></i></span>
+                                    <span><i class="fa-regular fa-comment"></i></span>
+                                    <span><i class="fa-regular fa-paper-plane"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+
+                            <!-- liked by -->
+                            <div class="liked-by">
+                                <span><img src="./assets/anowar.jpg" alt=""></span>
+                                <span><img src="./assets/emon.jpg" alt=""></span>
+                                <span><img src="./assets/me.jpg" alt=""></span>
+                                <p><b>Anower</b> and <b> 46 </b> others likes</p>
+                            </div>
+
+                            <!-- caption -->
+                            <div class="caption">
+                                <div class="title">Lorem ipsum dolor sit amet consectetur adipio.</div>
+                                <p><b>Clear Dream</b> Lorem ipsum dolor sit amet consectetur adipisicing.
+                                    <span class="hars-tag">#lifestyle</span>
+                                </p>
+                            </div>
+
+                            <!-- comments -->
+                            <div class="comments text-gray">
+                                View all comments
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- right side -->
+            <section class="main-right">
+                <div class="messages">
+                    <div class="message-top">
+                        <h4>Message</h4> <i class="fa-regular fa-pen-to-square"></i>
+                    </div>
+                    <div class="message-search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" placeholder="Search contact" id="message-search">
+                    </div>
+                    <div class="message-categories">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-request">Request(5)</h6>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./assets/me.jpg" alt="">
+                            <div class="green-active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Rakib Hasan</h5>
+                            <p class="text-gray">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./assets/anowar.jpg" alt="">
+                            <div class="green-active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Anower Hossain</h5>
+                            <p class="text-gray">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./assets/soykot.jpg" alt="">
+                            <!-- <div class="green-active"></div> -->
+                        </div>
+                        <div class="message-body">
+                            <h5>Soykoy Khan</h5>
+                            <p class="text-gray">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./assets/arif.jpg" alt="">
+                            <!-- <div class="green-active"></div> -->
+                        </div>
+                        <div class="message-body">
+                            <h5>Arif Hasan</h5>
+                            <p class="text-gray">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- other div-->
+                <div class="friend-request">
+                    <h4>Request</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="./assets/emon.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Emon Hossain</h5>
+                                <p class="text-gray">
+                                    4 mutual friend
+                                </p>
+                                <small class="text-gray alert">You have accepted friend request</small>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <div class="btn btn-primary" id="accept">
+                                Accept
+                            </div>
+                            <div class="btn btn-danger" id="delete">
+                                Delete
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <!-- end main  -->
+
+    <!-- popup box -->
+    <div class="popup profile-popup">
+        <div class="popup-wrapper">
+            <div class="popup-box profile-popup-box">
+                <h1>Rakib Hasan</h1>
+                <p>@therakib</p>
+                <div id="my-profile-picture">
+                    <img src="./assets/me.jpg" alt="">
+                </div>
+                <label for="profile-upload" class="btn btn-primary btn-lg">Upload Profile Picture</label>
+                <input type="file" accept="image/jpg, image/png, image/jpeg" id="profile-upload">
+                <button class="btn btn-primary btn-lg">Log Out</button>
+            </div>
+            <span class="close"><i class="fa-regular fa-circle-xmark"></i></span>
+
+        </div>
+    </div>
+
+    <!-- add post popup -->
+    <div class="popup add-post-popup">
+        <div class="popup-wrapper">
+            <form class="popup-box add-post-popup">
+                <h1>Create A New Post</h1>
+                <div class="row post-title">
+                    <label>Title</label>
+                    <input type="text" placeholder="What's on your mind?" id="add-post">
+                </div>
+                <div class="row post-img">
+                    <img src="" alt="" id="posted-img">
+                    <label for="feed-pic-upload" class="feed-upload-button">
+                        <span><i class="fa-solid fa-plus"></i></span>
+                        Upload A Picture
+                    </label>
+                    <input type="file" accept="image/jpg, image/png, image/jpeg" id="feed-pic-upload">
+                    <input type="submit" class="btn btn-primary btn-lg" value="Add Post">
+                </div>
+                <span class="close"><i class="fa-regular fa-circle-xmark"></i></span>
+            </form>
+        </div>
+    </div>
+
+    <!-- theme customization -->
+    <div class="popup theme-customize">
+        <div class="popup-wrapper">
+            <div class="popup-box theme-customization-popup-box">
+                <h1>Customization Your Theme</h1>
+                <p>Manage Your Font Size, Color and Background</p>
+
+                <div class="font-size">
+                    <h4>Font Size</h4>
+                    <div>
+                        <div>
+                            <h6>Aa</h6>
+                        </div>
+                        <div class="choose-size">
+                            <span class="font-size-1"></span>
+                            <span class="font-size-2 active"></span>
+                            <span class="font-size-3"></span>
+                            <span class="font-size-4"></span>
+                            <span class="font-size-5"></span>
+                        </div>
+                        <div>
+                            <h3>Aa</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="colors">
+                    <h4>Color</h4>
+                    <div class="choose-color">
+                        <span class="color-1 active"></span>
+                        <span class="color-2"></span>
+                        <span class="color-3"></span>
+                        <span class="color-4"></span>
+                        <span class="color-5"></span>
+                    </div>
+                </div>
+
+                <div class="background">
+                    <h4>Background</h4>
+                    <div class="choose-bg">
+                        <div class="bg-1 active">
+                            <span></span>
+                            <h5>Light</h5>
+                        </div>
+                        <div class="bg-2">
+                            <span></span>
+                            <h5>Dark</h5>
+                        </div>
+                    </div>
+                </div>
+                <span class="close"><i class="fa-regular fa-circle-xmark"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
